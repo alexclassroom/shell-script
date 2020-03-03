@@ -4,10 +4,10 @@
 # History:
 # 2020/03/03	Alex Lion	First release
 
-#Get sh file from GitHub public repository
+# Get sh file from GitHub public repository
 wget https://raw.githubusercontent.com/alexclassroom/shell-script/master/dailybackup.sh
 
-#After file downloading is done, wait for 3 seconds.
+# After file downloading is done, wait for 3 seconds.
 sleep 3
 
 # Declare Variables
