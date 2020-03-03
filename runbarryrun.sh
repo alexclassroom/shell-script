@@ -4,7 +4,7 @@
 # History:
 # 2020/03/03	Alex Lion	First release
 
-#Declare Variables
+# Declare Variables
 declare -i currentday=$(date +%Y%m%d)
 
 #Get sh file from GitHub public repository
