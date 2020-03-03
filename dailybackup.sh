@@ -7,7 +7,7 @@
 #Declare Variables
 declare -i currentday=$(date +%Y%m%d)
 
-# Create folder named as current date like mm-dd-yyyy under user home. For example, /home/alexlion/backup
+# Create folder named as current date like yyyymmdd under user home. For example, /home/alexlion/backup
 mkdir -p ~/backup/$currentday
 
 # Create a log file and write current date information.
