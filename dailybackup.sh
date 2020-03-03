@@ -11,4 +11,4 @@ mkdir -p ~/backup/$(date +%Y%m%d)
 date > ~/backup/$(date +%Y%m%d)/backup-$(date +%Y%m%d).log
 
 # Log diak partition uasge
-df -h > ~/backup/$(date +%Y%m%d)/df-h-$(date +%Y%m%d).log
+date > ~/backup/$(date +%Y%m%d)/df-h-$(date +%Y%m%d).log && df -h >> ~/backup/$(date +%Y%m%d)/df-h-$(date +%Y%m%d).log
