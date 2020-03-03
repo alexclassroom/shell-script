@@ -5,7 +5,7 @@
 # 2020/03/03	Alex Lion	First release
 
 # Declare Variables
-declare -i nowday=$(date +%Y%m%d)
+declare -i nowday=$(date +%Y%m%d);
 
 # Create folder named as current date like yyyymmdd under user home. For example, /home/alexlion/backup/20200303
 mkdir -p ~/backup/$nowday
