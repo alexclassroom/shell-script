@@ -14,7 +14,7 @@ mkdir -p ~/backup/$currentday
 date > ~/backup/$currentday/backup-$currentday.log
 
 # If rc.local exists, copy it.
-test -e /etc/rc.local && cp /etc/rc.local ~/backup/$currentday && echo "rc.local Copyied" >> ~/backup/$currentday/backup-$currentday.log || echo "rc.local Not Exist" >> ~/backup/$currentday/backup-$currentday.log
+test -e /etc/rc.local && cp /etc/rc.local ~/backup/$currentday && echo "rc.local Copyied" >> ~/backup/$currentday/backup-$currentday.log || echo "rc.local Not Exists" >> ~/backup/$currentday/backup-$currentday.log
 
 # Log diak partition uasge
 date > ~/backup/$currentday/df-h-$currentday.log && df -h >> ~/backup/$currentday/df-h-$currentday.log
