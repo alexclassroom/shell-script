@@ -10,14 +10,14 @@ declare -i currentday=$(date +%Y%m%d)
 #Get sh file from GitHub public repository
 wget https://raw.githubusercontent.com/alexclassroom/shell-script/master/dailybackup.sh
 
-#After file donloading is done, wait for 3 seconds.
+#After file downloading is done, wait for 3 seconds.
 sleep 3
 
 # Check dailybackup.sh eists or not. If file exists, run it.
-test -e ~/dailybackup.sh && sh dailybackup.sh || echo "dailybackup.sh Not Exists" > Backup-Failed-$currentday.log
+test -e ~/dailybackup.sh && sh dailybackup.sh || echo "dailybackup.sh Not Exists, $currentday backup failed." > Backup-Failed-$currentday.log
 
 #After process is done, wait for 1 second.
 sleep 1
 
 # Delete dailybackup.sh
-rm dailybackup.sh
+rm dailybackup.sh && echo "$currentday Backup Successfully!" > Backup-Success-$currentday.log
