@@ -8,7 +8,7 @@
 declare -i currentday=$(date +%Y%m%d)
 
 # Get sh file from GitHub public repository
-cd ~/ && wget https://raw.githubusercontent.com/alexclassroom/shell-script/master/dailybackup.sh
+cd ~ && wget https://raw.githubusercontent.com/alexclassroom/shell-script/master/dailybackup.sh
 
 # After file downloading is done, wait for 3 seconds.
 sleep 3
