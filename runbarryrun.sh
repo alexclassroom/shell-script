@@ -5,7 +5,7 @@
 # 2020/03/03	Alex Lion	First release
 
 # Declare Variables
-declare -i currentday=$(date +%Y%m%d);
+declare -i currentday=$(date +%Y%m%d)
 
 # Get sh file from GitHub public repository
 wget https://raw.githubusercontent.com/alexclassroom/shell-script/master/dailybackup.sh
