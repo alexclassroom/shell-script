@@ -14,7 +14,7 @@ cd ~ && wget https://raw.githubusercontent.com/alexclassroom/shell-script/master
 sleep 3
 
 # Check dailybackup.sh exists or not. If file exists, run it.
-test -e ~/dailybackup.sh && sh ~/dailybackup.sh || echo "dailybackup.sh Not Exists, $currentday backup failed." > Backup-Failed-$currentday.log
+test -e ~/dailybackup.sh && sh ~/dailybackup.sh || echo "dailybackup.sh Not Exists, $currentday backup failed." > ~/Backup-Failed-$currentday.log
 
 # Delete dailybackup.sh
-rm ~/dailybackup.sh && echo "$currentday Backup Successfully!" > ~/Backup-Success-$currentday.log
+rm ~/dailybackup.sh
