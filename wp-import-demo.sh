@@ -1,0 +1,1 @@
+wp plugin install wordpress-importer --activate --allow-root && wget https://raw.githubusercontent.com/WPTT/theme-unit-test/master/themeunittestdata.wordpress.xml && wp import themeunittestdata.wordpress.xml --authors=create --allow-root && rm themeunittestdata.wordpress.xml && wp plugin deactivate wordpress-importer --uninstall --allow-root
