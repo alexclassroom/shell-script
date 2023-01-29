@@ -9,3 +9,4 @@
 # History:
 # 2020/03/03	Alex Lion	First release
 wp plugin install wordpress-importer --activate --allow-root && wget https://raw.githubusercontent.com/WPTT/theme-unit-test/master/themeunittestdata.wordpress.xml && wp import themeunittestdata.wordpress.xml --authors=create --allow-root && rm themeunittestdata.wordpress.xml && wp plugin deactivate wordpress-importer --uninstall --allow-root
+runuser -u www-data -- wp plugin install wordpress-importer --activate && runuser -u www-data -- wget https://raw.githubusercontent.com/WPTT/theme-unit-test/master/themeunittestdata.wordpress.xml && runuser -u www-data -- wp import themeunittestdata.wordpress.xml --authors=create && runuser -u www-data -- rm themeunittestdata.wordpress.xml && runuser -u www-data -- wp plugin deactivate wordpress-importer --uninstall
